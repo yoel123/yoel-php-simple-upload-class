@@ -23,7 +23,7 @@ $upload->set_extensions(array('jpg','jpeg','png','gif'));  //allowed extensions 
 //$upload->allow_all_formats(); //allow all file formats
 $upload->set_max_size(2.5); //set max file size to be allowed in MB//
 
-if($upload->upload_file('img_upload') && isset($_POST['img_upload']))
+if($upload->upload_file('img_upload'))
 {        
     $image  =   $upload->get_upload_name(); //get uploaded file name
 	echo '<div class="alert alert-success" role="alert">file uploaded</div>';
